@@ -38,7 +38,10 @@ $(document).ready(function(){
   $("#hint-string > *:first-child").text(hint);
   $("#guess-form").submit (function (event){
     event.preventDefault ();
-    
+    var userGuess = $("#guess").val();
+    if (userGuess.toLowerCase() === answer.toLowerCase()) {
+      alert ("Correct!");
+    }
 
   });
 });
