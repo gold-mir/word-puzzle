@@ -1,4 +1,3 @@
-var answer = "You can do it";
 var vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
 
 function isVowel(letter){
@@ -34,4 +33,12 @@ function removeVowels (stringWithVowels) {
 }
 
 $(document).ready(function(){
+  var answer = "You can do it!";
+  var hint = removeVowels(answer);
+  $("#hint-string > *:first-child").text(hint);
+  $("#guess-form").submit (function (event){
+    event.preventDefault ();
+    
+
+  });
 });

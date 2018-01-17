@@ -15,13 +15,16 @@
     <h1>Word Puzzle</h1>
     <h2>What is it?</h2>
 
-    <div class="stringInput-hidden">
-      <p>"You can do it"</p>
+    <div id="hint-string">
+      <h4></h4>
     </div>
-
-    <div class="puzzleOutput-show">
-      <p>"Y-- c-n d- -t"</p>
-    </div>
+    <form id="guess-form">
+      <div>
+        <label for="guess">Guess the sentence!</label>
+        <input type="text" id="guess">
+      </div>
+      <button type="submit">Try it!</button>
+    </form>
 
 
 
